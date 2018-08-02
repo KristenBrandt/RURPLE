@@ -13,6 +13,7 @@ public class Main {
 
     public static void main(String[] args){
         Map mimapa = new Map();
+        String [][] map;
 
 /** Variables **/
     String mapita;
@@ -54,11 +55,20 @@ public class Main {
 /** imprimir mapa **/
     System.out.println("Mapa cargado:");
     cosa.forEach(a -> System.out.println(a));
+    System.out.println("Ejecutando:");
 
-/** Crear un nuevo mapa **/
-    //Map elmapa = new Map(cosa);
-    //CoinPile blingblign = new CoinPile();
+    for (int b =0;b<instrucion.size();b++){
+        if (instrucion.get(b).equals("MOVE")){
 
+
+        }
+
+    }
+    try {
+        Thread.sleep(500);
+    }catch (Exception e){
+        System.out.println("Error a la hora de poner el timer!");
+    }
 
 
     }
