@@ -22,7 +22,7 @@ public class Main {
 /** Pedir que ingrese la dirección del mapa **/
     System.out.println("Ingrese el nombre del archivo de mapa a ejecutar (tiene que terminar en .txt):");
     mapita = scan.nextLine();
-    ArrayList<String> cosa = new ArrayList<String>();
+    ArrayList<String> cosa = new ArrayList<>();
 
 /** para leer el archivo de mapa **/
     try {

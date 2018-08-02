@@ -10,9 +10,9 @@ public class Map {
     private int width;
     private ArrayList<Wall> WallArrayList;
     private ArrayList<CoinPile> CoinPileArrayList;
-    public static final String Move = "MOVE";
-    public static final String Rotate = "ROTATE";
-    public static final String Pick = "PICK";
+    private static final String Move = "MOVE";
+    private static final String Rotate = "ROTATE";
+    private static final String Pick = "PICK";
 
     public Map() {
         this.WallArrayList = new ArrayList<>();
@@ -61,15 +61,12 @@ public class Map {
         this.CoinPileArrayList.add(coinPile);
     }
 
-//    private boolean RoboCoins() {
-        CoinPile coinPile =
-    }
+   // private boolean RoboCoins() {
+   //     CoinPile coinPile =
+  //  }return
 
-
-    /**
-     * leer las instrucciones de un archivo .txt y implementarlas
-     **/
-  /**  public boolean leerlasinstruc(String instruc) {
+    /**leer las instrucciones de un archivo .txt y implementarlas **/
+   public boolean leerlasinstruc(String instruc) {
         switch (instruc) {
             case Pick:
                 if (RoboCoins()) {
@@ -80,7 +77,7 @@ public class Map {
                 return false;
             case Move:
                 if (RoboMove()) {
-                    this.robot.move();
+                    this.Robot.move();
                 } else {
                     System.out.println("RURPLE no se puede mover");
                 }
@@ -93,7 +90,7 @@ public class Map {
         }
         return true;
     }
-**/
+
     @Override
     public String toString() {
         String mapaahorita = "";

@@ -1,4 +1,3 @@
-/** creo que ya esta **/
 public class Robot {
     private int linea;
     private int columna;
